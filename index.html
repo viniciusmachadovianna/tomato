@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span id="date">a</span>
+        <hr>
+        <span id="weekTime">b</span> 
+    </header>
+    <ul id="toDoList">
+        <li>
+            <button class="check"><img src="assets/check.svg" alt=""></button>
+            <span>finish this list</span>
+        </li>
+        <li>
+            <button class="check"><img src="assets/check.svg" alt=""></button>
+            <span>improve it</span>
+        </li>
+        <li>
+            <button class="check"><img src="assets/check.svg" alt=""></button>
+            <span>publish :D</span>
+        </li>
+    </ul>
+    <main>
+        <time datetime="HH:MM:SS">00:10</time>
+    </main>
+    <nav>
+        <div class="sessions">
+            <button id="startPause">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                PLAY/PAUSE
+            </button>
+            </svg>
+            <div class="break" id="break1"></div>
+            <div class="break" id="break2"></div>
+            <div class="break" id="break3"></div>
+            <div class="break" id="break4"></div>
+        </div>
+        <button id="shortBreak">break</button>
+        <span id="shortBreakTime">5</span>
+        <button><img src="assets/edit.svg" alt="edit short break timer"></button>
+        <button id="longBreak">long break</button>
+        <span id="longBreakTime">10</span>
+        <button><img src="assets/edit.svg" alt="edit long break timer"></button>
+    </nav>
+</body>
+<script src="script.js"></script>
+</html>
